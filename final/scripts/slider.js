@@ -1,1 +1,0 @@
-// The js for slider goes in this file

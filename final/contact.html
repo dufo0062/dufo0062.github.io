@@ -1,9 +1,322 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ca">
 <head>
-	<title>Contact Page</title>
-</head>
-<body>
+	<meta charset="utf-8">
+	<meta name="description" content="We are a company that grows environmentally sustainable Christmas Trees, and loans them out for the Christmas season.">
+	<title>Contact Sustainabili-Tree</title>
 
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/validation.css">
+
+	<!-- This is the link to a font, called font-awesome, which automatically inserts social media icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!-- LOADER BEGINNING -->
+	<div class="overlay-container">
+		<div class="loader"></div>
+	</div>
+	<!-- LOADER END -->
+
+
+	<!-- HEADER BEGINNING-->
+	<header class="site-header clearfix" id="site-header">
+		<img src="images/site_logo.png" alt="sustainabili-TREE logo" class="logo">	
+							
+		<!-- Desktop Navigation -->
+		<nav class="desktop-nav">		
+			<ul class="main-nav clearfix">
+				<li>
+					<a class="transition-ease" href="index.html">Home</a>
+				</li>
+
+				<li>
+					<a class="transition-ease" href="about.html">About Us</a>
+				</li>
+
+				<li>
+					<a class="transition-ease" href="trees.html">Our Trees</a>
+				</li>
+
+				<li>
+					<a class="transition-ease" href="reserve-now.html">Reserve Now</a>
+				</li>	
+
+				<li>
+					<a class="transition-ease" href="blog.html">Blog</a>
+				</li>	
+
+				<li>
+					<a class="transition-ease" href="contact.html">Contact</a>
+				</li>				
+			</ul>
+		</nav>
+
+		<div class="ham"></div>
+
+		<!-- Mobile and Tablet Navigation -->
+		<div class="mobile-nav-container clearfix">
+			<nav class="mobile-nav">		
+				<ul class="main-nav">
+					<li>
+						<a class="transition-ease" href="index.html" id="active">Home</a>
+					</li>
+
+					<li>
+						<a class="transition-ease" href="about.html">About Us</a>
+					</li>
+
+					<li>
+						<a class="transition-ease" href="trees.html">Our Trees</a>
+					</li>
+
+					<li>
+						<a class="transition-ease" href="reserve-now.html">Reserve Now</a>
+					</li>	
+
+					<li>
+						<a class="transition-ease" href="blog.html">Blog</a>
+					</li>	
+
+					<li>
+						<a class="transition-ease" href="contact.html">Contact</a>
+					</li>				
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- HEADER END-->
+
+	<!-- MAIN CONTENT BEGINNING -->
+	<main>
+		<!-- CONTACT US SECTION -->
+		<section class="cards-style-section">
+			<h1 class="heading">Contact Us</h1>
+
+			<div class="contact-cards clearfix">
+			 	<div class="contact-card">    
+			    	<div class="contact-image">
+			    		<img src="images/contact_phone.png" alt="Telephone Icon" class="contact-img">
+			    	</div>
+			    	
+			   		<div class="contact-body">
+			    		<h3 class="heading">Phone Us</h3>
+			     		<p>819-827-TREE <br>(819-827-8733)</p>
+			    	</div>    
+			  	</div>
+
+				<div class="contact-card">    
+			    	<div class="contact-image">
+			    		<img src="images/contact_email.png" alt="Mail Icon" class="contact-img">
+			    	</div>
+			    	
+			    	<div class="contact-body">
+			    		<h3 class="heading">E-mail Us</h3>
+			    		<p>greenxmas@gmail.com</p>
+			    	</div>
+			  	</div>
+			  
+			 	<div class="contact-card">   
+			    	<div class="contact-image">
+			    		<img src="images/contact_visit.png" alt="House Icon" class="contact-img">
+			    	</div>
+			    	
+			    	<div class="contact-body">
+			    		<h3 class="heading">Visit Us</h3>
+			    		<p>71 Chemin Kingsmere<br>Chelsea, Quebec<br>J9B1G8</p>
+			    	</div>
+			  	</div>
+			</div>
+		</section>
+		<!-- END OF CONTACT US SECTION -->
+
+
+		<!-- MAP BEGINNING -->
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24400.191676524024!2d-75.82093441671545!3d45.49227337426373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd1e29846f06565%3A0x94aa8096202100ee!2s71+Chemin+Kingsmere%2C+Chelsea%2C+QC+J9B+1G8!5e0!3m2!1sen!2sca!4v1521858532658"  allowfullscreen></iframe>
+		</div>
+		<!-- END OF MAP SECTION -->
+
+
+		<!-- FORM BEGINNING -->
+		<section class="message-us-section">
+			<h2 class="heading">Message Us</h2>
+			
+			<form class="form" id="message-form" action="somepage.php" method="get">
+				<div class="name-wrapper form-element input-container required validate clearfix">
+					<label for="firstName" class="input-label label-text">First Name</label>
+					<p class="required-symbol">*</p>
+					<input type="text" name="firstName" id="firstName" class="wide" data-validation-type="text">
+					<p class="feedback"></p>
+				</div>
+
+				<div class="name-wrapper form-element input-container required validate clearfix">
+					<label for="lastName" class="input-label label-text">Last Name</label>
+					<p class="required-symbol">*</p>
+					<input type="text" name="lastName" id="lastName" class="wide" data-validation-type="text">
+					<p class="feedback"></p>
+				</div>
+
+				<div class="email-wrapper form-element input-container required validate clearfix">
+					<label for="email" class="input-label label-text">E-mail</label>
+					<p class="required-symbol">*</p>
+					<input type="email" name="email" id="email" class="wide" data-validation-type="email" placeholder="your@email.com">
+					<p class="feedback"></p>
+				</div>
+
+				<div class="number-wrapper form-element input-container validate clearfix">
+					<label class="input-label label-text" for="number">Contact Number</label>
+					<input type="tel" name="number" id="number" class="wide" placeholder="111-222-3333" data-validation-type="phone">
+					<p class="feedback"></p>
+				</div>
+
+				<div class="message-wrapper form-element input-container required validate clearfix">
+					<label class="input-label label-text" for="message">Message</label>
+					<p class="required-symbol">*</p>
+					<textarea name="message" id="message" class="wide"></textarea>
+					<p class="feedback"></p>
+				</div>
+
+
+				<div class="response-wrapper form-element input-container required-checkbox clearfix">
+					<h3 class="label-text">How would you like us to respond to your inquiries?*</h3>
+					
+					<div class="check-email">
+						<input type="checkbox" name="respond-email" id="respond-email" class="box" value="email">	
+						<label class="check-label" for="email">E-mail</label>	
+					</div>
+					
+					<div class="check-phone">
+						<input type="checkbox" name="respond-phone" id="respond-phone" class="box" value="phone">
+						<label class="check-label" for="respond-phone">Phone Call</label>
+					</div>
+
+					<div class="check-text">
+						<input type="checkbox" name="repond-text" id="respond-text" class="box" value="text">
+						<label class="check-label" for="respond-text">Text Message</label>
+					</div>
+
+					<p class="feedback"></p>
+				</div>
+
+				<div class="news-wrapper form-element input-container clearfix">
+					<h3>Do you wish to receive our monthly e-newsletter?</h3>
+					<label class="check-label" for="yes-box">
+						Yes:
+						<input type="radio" name="forms" id="yes-box" class="box" checked="">
+					</label>
+
+					<label class="check-label" for="no-box">
+						No:
+						<input type="radio" name="forms" id="no-box" class="box">					
+					</label>
+
+					<p class="feedback"></p>
+				</div>
+
+				<p id="required">*Required Fields</p>
+
+				<div>
+					<button type="Submit" id="btn-submit">Send</button>
+				</div>
+			</form>
+		</section>
+		<!-- END OF FORM SECTION-->
+	</main>
+	<!-- END OF MAIN CONTENT -->
+
+	<!-- FOOTER BEGINNING -->
+	<footer class="footer clearfix" id="footer">
+		<div class="footer-wrapper">
+			<section class="footer-col">
+				<h3 class="heading">Contact Us</h3>
+
+				<ul>
+					<li>
+						<a href="contact.html">General Inquiries</a>
+					</li>
+
+					<li>
+						<a href="reserve-now.html">Reserve Your Tree</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="footer-col">
+				<h3 class="heading">Helpful Links</h3>
+
+				<ul>
+					<li>
+						<a href="terms-and-conditions.html">Terms and Conditions</a>
+					</li>
+
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+				</ul>
+			</section>
+
+			
+			<section class="footer-col ">
+				<h3 class="heading">Social Media</h3>
+
+				<!-- Social Media Icons for Mobile View -->
+				<ul class="social-media-mobile">
+					<li>
+						<a href="https://www.facebook.com/" target="blank">
+							<img src="images/footer_facebook.png" alt="Facebook icon">
+						</a>
+						
+					</li>
+
+					<li>
+						<a href="https://www.instagram.com/?hl=en" target="blank">
+							<img src="images/footer_instagram.png" alt="Instagram icon">
+						</a>
+					</li>
+
+					<li>
+						<a href="https://twitter.com/?lang=en" target="blank">
+							<img src="images/footer_twitter.png" alt="Twitter icon">
+						</a>
+					</li>
+
+					<li>
+						<a href="https://www.youtube.com/" target="blank">
+							<img src="images/footer_youtube.png" alt="Youtube icon">
+						</a>
+					</li>
+				</ul>
+
+				<!-- Social Media Icons for Tablet and Desktop View -->
+				<ul class="social-media-desktop">
+					<li>
+						<a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook"></i> Facebook</a>
+					</li>
+
+					<li>
+						<a href="https://www.instagram.com/?hl=en" target="blank"><i class="fa fa-instagram"></i> Instagram</a>
+					</li>
+
+					<li>
+						<a href="https://twitter.com/?lang=en" target="blank"><i class="fa fa-twitter"></i> Twitter</a>
+					</li>
+
+					<li>
+						<a href="https://www.youtube.com/" target="blank"><i class="fa fa-youtube"></i> Youtube</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+
+		<p>Copyright &copy; 2018 Sustainabili-TREE</p>
+	</footer>
+	<!-- END OF FOOTER -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/validation.js"></script>
 </body>
 </html>

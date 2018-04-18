@@ -1,10 +1,343 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ca">
 <head>
-	<title>Home Page</title>
+	<meta charset="utf-8">
+	<meta name="description" content="We are a company that grows environmentally sustainable Christmas Trees, and loans them out for the Christmas season.">
+	<title>Sustainabili-Tree</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+	<!-- This is the link to a font, called font-awesome, which automatically inserts social media icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-<h1>Home Page</h1>
-<p>Here are some changes that I am making to test</p>
+	<!-- LOADER BEGINNING -->
+	<div class="overlay-container">
+		<div class="loader"></div>
+	</div>
+	<!-- LOADER END -->
+
+
+	<!-- HEADER BEGINNING-->
+	<header class="site-header clearfix" id="site-header">
+		<img src="images/site_logo.png" alt="sustainabili-TREE logo" class="logo">	
+							
+		<!-- Desktop Navigation -->
+		<nav class="desktop-nav">		
+			<ul class="main-nav clearfix">
+				<li>
+					<a class="transition-ease" href="index.html">Home</a>
+				</li>
+
+				<li>
+					<a class="transition-ease" href="about.html">About Us</a>
+				</li>
+
+				<li>
+					<a class="transition-ease" href="trees.html">Our Trees</a>
+				</li>
+
+				<li>
+					<a class="transition-ease" href="reserve-now.html">Reserve Now</a>
+				</li>	
+
+				<li>
+					<a class="transition-ease" href="blog.html">Blog</a>
+				</li>	
+
+				<li>
+					<a class="transition-ease" href="contact.html">Contact</a>
+				</li>				
+			</ul>
+		</nav>
+
+		<div class="ham"></div>
+
+		<!-- Mobile and Tablet Navigation -->
+		<div class="mobile-nav-container clearfix">
+			<nav class="mobile-nav">		
+				<ul class="main-nav">
+					<li>
+						<a class="transition-ease" href="index.html" id="active">Home</a>
+					</li>
+
+					<li>
+						<a class="transition-ease" href="about.html">About Us</a>
+					</li>
+
+					<li>
+						<a class="transition-ease" href="trees.html">Our Trees</a>
+					</li>
+
+					<li>
+						<a class="transition-ease" href="reserve-now.html">Reserve Now</a>
+					</li>	
+
+					<li>
+						<a class="transition-ease" href="blog.html">Blog</a>
+					</li>	
+
+					<li>
+						<a class="transition-ease" href="contact.html">Contact</a>
+					</li>				
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- HEADER END-->
+
+	<!-- MAIN CONTENT BEGINNING-->
+	<main class="main-content" id="main-content">
+
+		<!-- BANNER SECTION BEGINNING-->
+		<section class="banner-container">
+			<div class=slogan-group>
+				<h1 class="heading">A Gift for the Earth. <br> A Gift for your Children. <br> A Gift for your Yourself.</h1>
+				<p class="slogan-text">Rent a Christmas Tree from a Company that Cares</p>
+				<a class="link-button transition-ease" href="reserve-now.html">Reserve Your Tree</a>
+			</div>
+		</section> 
+		<!-- END OF BANNER SECTION-->
+
+		<!-- "HOW OUR SERVICES WORK" SECTION (CARD-STYLE)-->
+		<section class="cards-style-section">
+			<h2 class="heading">How Our Service Works</h2>
+
+			<div class="cards clearfix">
+			 	<div class="services-card">    
+			    	<div class="card-image">
+			    		<img src="images/services_grow.png" alt="Man planting seeds" class="services-img">
+			    	</div>
+			    	
+			   		<div class="card-body">
+			    		<h3 class="heading">We Grow Them</h3>
+			     		<p>We grow and nurture quality Balsam Fir trees on our land in Old Chelsea, Quebec, without pestisides and artificial fertilizers.</p>
+			    	</div>    
+			  	</div>
+
+				<div class="services-card">    
+			    	<div class="card-image">
+			    		<img src="images/services_borrow.png" alt="Child in front of a Christmas Tree" class="services-img">
+			    	</div>
+			    	
+			    	<div class="card-body">
+			    		<h3 class="heading">You Borrow Them</h3>
+			    		<p>During the Christmas season, we uproot our living trees, place them in nice, big pots, and rent them to you for 2-3 weeks.</p>
+			    	</div>
+			  	</div>
+			  
+			 	<div class="services-card">   
+			    	<div class="card-image">
+			    		<img src="images/services_sustain.png" alt="Coniferous forest" class="services-img">
+			    	</div>
+			    	
+			    	<div class="card-body">
+			    		<h3 class="heading">We Sustain Them</h3>
+			    		<p>When you’re done with your tree, we bring them back to the lot, re-plant them, and care for them until next year!</p>
+			    	</div>
+			  	</div>
+			</div>
+			
+			<a id="learn-more-link" class="link-button transition-ease" href="about.html">Learn More</a>						
+		</section>
+		<!-- END OF "HOW OUR SERVICES WORK SECTION" -->
+
+		<!-- QUOTES SLIDESHOW BEGINNING-->
+		<!-- slideshow container -->
+		<section class="slideshow-container">
+			<h2 class="heading">What Our Customers Think</h2>
+
+			<div class="mySlides" id="slide-1">
+				<q class="slide-quote">I am always looking for quick, hassle-free ways to become more sustainable and eco-friendly in my everyday life. Sustainabili-TREE is the perfect Christmas solution for me!</q>
+				<p class="author"> - Brittany Sullivan</p>
+			</div>
+
+			<div class="mySlides" id="slide-2">
+				<q class="slide-quote">With my bad back, I can't set up my own Christmas tree anymore. Sustainabili-TREE has helped keep our Christmas special and pain-free!</q>
+				<p class="author"> - Ted Morin</p>
+			</div>
+
+			<div class="mySlides" id="slide-3">
+				<q class="slide-quote">Great people, great service and a great cause! I'm definitely renting again next year!</q>
+				<p class="author"> - Sofia Jain</p>
+			</div>
+
+			<!-- Next/prev buttons -->
+			<div class="arrow-container">
+				<a class="arrow transition-ease" id="prev-arrow">&#10094;</a>
+			</div>
+  			
+  			<div class="arrow-container"> 
+  				<a class="arrow transition-ease" id="next-arrow">&#10095;</a>
+ 			</div>
+
+  			<!-- Dots/bullets/indicators -->
+			<!-- <div class="dot-container">
+  				<span class="dot transition-ease dot-active" data-target="slide-1"></span> 
+  				<span class="dot transition-ease" data-target="slide-2"></span> 
+  				<span class="dot transition-ease" data-target="slide-3"></span> 
+			</div> -->
+
+			<div class="dot-container">
+  				<span class="dot transition-ease dot-active" id="dot-1"></span> 
+  				<span class="dot transition-ease" id="dot-2"></span> 
+  				<span class="dot transition-ease" id="dot-3"></span> 
+			</div>
+		</section>
+		<!-- END OF QUOTES SLIDESHOW -->
+
+		<!-- BLOG (CARD-STYLE) BEGINNING -->
+		<section class="cards-style-section">
+			<h2 class="heading">The Latest from Our Blog</h2>
+			 
+			<div class="cards clearfix blog-cards">
+				<div class="blog-card">
+					<a class="blog-link" href="blog.html">
+					 	<div class="no-margin"> 
+					 		<div class="card-image">
+					 			<img src="images/blog_wrapping.jpg" alt="Gifts under Christmas tree" id="wrapping-img">
+					 		</div>   
+					    	
+					   		<div class="card-body">
+					    		<h3 class="heading">Zero Waste Wrapping 101</h3>
+					     		<p>Christmas is a time when so much waste is created unnecessarily! Learn a few simple ways to reduce your Christmas wrapping trash.</p>
+					    	</div>    
+					  	</div>
+					</a>
+				</div>
+			
+			  	<div class="blog-card blog-card-desktop">	
+			  		<a class="blog-link" href="blog.html">	  
+						<div class="no-margin">    
+					    	<div class="card-image">
+					    		<img src="images/blog_decorations.jpg" alt="Natural Christmas decorations" id="decorations-img">
+					    	</div>
+					    	
+					    	<div class="card-body">
+					    		<h3 class="heading">Decorate the Natural Way</h3>
+					    		<p>What is a sustainable tree without sustainable decorations? Here are a few quick eco-friendly Christmas decorations to make your season even greener.</p>
+					    	</div>
+					  	</div>
+					</a>
+				</div>				  	
+			  			 	
+			 	<div class="blog-card blog-card-desktop">
+			 		<a class="blog-link" href="blog.html">
+				 		<div class="no-margin">   
+					    	<div class="card-image">
+					    		<img src="images/blog_gifts.jpg" alt="Natural Christmas decorations" id="gifts-img">
+					    	</div>
+					    	
+					    	<div class="card-body">
+					    		<h3 class="heading">The Most Meaningful Gifts</h3>
+					    		<p>The best gifts of all are the gifts from the heart...and those are usually zero-waste gifts! Here are some of our favourite eco-friendly gifts to give and receive.</p>
+					    	</div>
+					  	</div>
+					</a>
+				</div>				
+			</div>
+
+			<a id="blog-link-button" class="link-button transition-ease" href="blog.html">Visit Blog</a>
+		</section>
+		<!-- END OF BLOG SECTION -->
+
+	</main>
+
+	<!-- FOOTER BEGINNING -->
+	<footer class="footer clearfix" id="footer">
+		<div class="footer-wrapper">
+			<section class="footer-col">
+				<h3 class="heading">Contact Us</h3>
+
+				<ul>
+					<li>
+						<a href="contact.html">General Inquiries</a>
+					</li>
+
+					<li>
+						<a href="reserve-now.html">Reserve Your Tree</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="footer-col">
+				<h3 class="heading">Helpful Links</h3>
+
+				<ul>
+					<li>
+						<a href="terms-and-conditions.html">Terms and Conditions</a>
+					</li>
+
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+				</ul>
+			</section>
+
+			
+			<section class="footer-col ">
+				<h3 class="heading">Social Media</h3>
+
+				<!-- Social Media Icons for Mobile View -->
+				<ul class="social-media-mobile">
+						<li>
+							<a href="https://www.facebook.com/" target="blank">
+								<img src="images/footer_facebook.png" alt="Facebook icon">
+							</a>
+							
+						</li>
+
+						<li>
+							<a href="https://www.instagram.com/?hl=en" target="blank">
+								<img src="images/footer_instagram.png" alt="Instagram icon">
+							</a>
+						</li>
+
+						<li>
+							<a href="https://twitter.com/?lang=en" target="blank">
+								<img src="images/footer_twitter.png" alt="Twitter icon">
+							</a>
+						</li>
+
+						<li>
+							<a href="https://www.youtube.com/" target="blank">
+								<img src="images/footer_youtube.png" alt="Youtube icon">
+							</a>
+						</li>
+					</ul>
+
+				<!-- Social Media Icons for Tablet and Desktop View -->
+				<ul class="social-media-desktop">
+					<li>
+						<a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook"></i> Facebook</a>
+					</li>
+
+					<li>
+						<a href="https://www.instagram.com/?hl=en" target="blank"><i class="fa fa-instagram"></i> Instagram</a>
+					</li>
+
+					<li>
+						<a href="https://twitter.com/?lang=en" target="blank"><i class="fa fa-twitter"></i> Twitter</a>
+					</li>
+
+					<li>
+						<a href="https://www.youtube.com/" target="blank"><i class="fa fa-youtube"></i> Youtube</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+
+		<p>Copyright &copy; 2018 Sustainabili-TREE</p>
+	</footer>
+	<!-- END OF FOOTER -->
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/quotes_slider.js"></script>
+
 </body>
 </html>
+

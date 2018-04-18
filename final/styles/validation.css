@@ -1,1 +1,48 @@
-/*Contact form Validation styles go here */
+@charset "utf-8";
+
+.feedback {
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 0.3rem;
+	padding: 0.5rem;
+	margin-top: 0.8rem;
+	display: none;
+}
+
+
+/*Success Styles*/
+
+.has-success .label-text {
+	color:green;
+}
+
+.has-success input[type=text],
+.has-success input[type=email],
+.has-success textarea {
+	border: 1px solid green;
+} 
+
+.has-success .feedback {
+	color:green;
+	background: #D9FFC7;
+}
+
+
+/*Error Styles*/
+
+.has-error .label-text {
+	color:red;
+}
+
+.has-error input[type=text],
+.has-error input[type=email],
+.has-error input[type=password],
+.has-error textarea {
+	border: 1px solid red;
+} 
+
+.has-error .feedback {
+	color:red;
+	background: pink;
+}
