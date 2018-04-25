@@ -8,7 +8,7 @@ function init() {
 
 
 	if($('.image-gallery').length>0){
-		image_slider_init();
+		slider_init();
 	}
 
 	if($('.slideshow-container').length>0){

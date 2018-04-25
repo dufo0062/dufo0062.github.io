@@ -1,6 +1,6 @@
 var activeThumbIndex = 0;
 
-function image_slider_init() {
+function slider_init() {
 
 	$('.img-slide-thumb').on('click', function(){
 
@@ -12,7 +12,8 @@ function image_slider_init() {
 	autoSlider();
 }
 
-
+// SLIDESHOW FUNCTIONS
+// Used to manually change slides, by selecting a thumbnail. 
 function changeSlide(currentThumb) {
 
 	var targetSlide = $(currentThumb).attr('data-target');
@@ -45,6 +46,7 @@ function changeSlide(currentThumb) {
 
 }
 
+// Used to automatically change slides. 
 function autoSlider() {
 
 	var slideThumbs = document.querySelectorAll('.img-slide-thumb');

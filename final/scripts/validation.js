@@ -14,8 +14,10 @@ function validation_init(){
 	});
 }
 
+// REQUIRED FIELD CHECK BEGINNING
 function required_check() {
 
+	//Used to check for presence/absence of required text in input boxes and text areas.
 	var required_inputs = $('.required input, .required textarea');
 	var has_error = false;
 
@@ -26,6 +28,7 @@ function required_check() {
 		var feedback = $(required_container).find('.feedback');
 		var input_val = $(req_input).val().trim();
 
+		// Feedback for presence/absence of text in input boxes and text areas
 		$(feedback).fadeOut(0);
 		if(input_val=='') {
 
@@ -48,6 +51,7 @@ function required_check() {
 
 	});
 
+	//Used to check for completion of required checkboxes.
 	var required_checkbox_containers = $('.required-checkbox');
 
 	$.each(required_checkbox_containers, function(req_check_container_index, req_check_container){
@@ -59,6 +63,7 @@ function required_check() {
 
 		$(checkbox_feedback).fadeOut(0);
 
+		// Feedback for copletion/lack of completion of checkboxes
 		$.each(required_checkboxes, function(req_check_index, req_check){
 
 			if($(req_check).prop('checked')) {
@@ -70,12 +75,12 @@ function required_check() {
 		if(check_counter>0) {
 			$(req_check_container).addClass('has-success');
 			$(req_check_container).removeClass('has-error');
-			$(checkbox_feedback).text('The "'+checkbox_label+'" field has been properly completed.');
+			$(checkbox_feedback).text('This field has been properly completed.');
 
 		} else {
 			$(req_check_container).removeClass('has-success');
 			$(req_check_container).addClass('has-error');
-			$(checkbox_feedback).text('Please complete the "'+checkbox_label+'" field.');
+			$(checkbox_feedback).text('Please select one or more checkboxes.');
 			has_error = true;
 
 		}
@@ -85,7 +90,10 @@ function required_check() {
 
 	return has_error;
 }
+// REQUIRED FIELD CHECK END
 
+
+// INPUT FORMAT VALIDATION BEGINNING
 function validate_input() {
 
 	var validate_inputs = $('.validate input');
@@ -100,19 +108,22 @@ function validate_input() {
 		var validation_type = $(validate_input).attr('data-validation-type');
 		var feedback_text = "";
 		var has_error = false;
- 
+ 		
+
 		if(input_val!='') {
 
 			$(feedback).fadeOut(0);
 
+			// Used to check for unwanted spaces in name fields.
 			if(validation_type=='text') {
 
 				if(input_val.match(/\s/g)) {
-					feedback_text = 'Please remove any spaces from the "'+input_label+'" field.';
+					feedback_text = 'Please remove spaces from the "'+input_label+'" field.';
 					has_error = true;
 				}
 			}
 
+			// Used to check for proper phone number format. 
 			if(validation_type=='phone') {
 				pattern =  /[0-9]{3}-[0-9]{3}-[0-9]{4}/;
 				if(!input_val.match(pattern)) {
@@ -121,16 +132,18 @@ function validate_input() {
 				}
 			}
 
+			// Used to check for proper e-mail format. 
 			if(validation_type=='email') {
 				pattern = /(.+)@(.+){2,}\.(.+){2,}/;
 
 				if(!input_val.match(pattern)) {
-					feedback_text = 'The e-mail address entered in the "'+input_label+'" field is not valid.';
+					feedback_text = 'The value entered in the "'+input_label+'" field is not valid.';
 					has_error = true;
 
 				}
 			}
 
+			// Validation error messages
 			if(has_error) {
 				$(validate_container).removeClass('has-success');
 				$(validate_container).addClass('has-error');
@@ -150,3 +163,4 @@ function validate_input() {
 	return validation_error;
 
 }
+// INPUT FORMAT VALIDATION END

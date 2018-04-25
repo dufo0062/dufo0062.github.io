@@ -429,7 +429,7 @@ p{
 
 
 
-/*-----"HOW OUR SERVICES WORK" SECTION (CARD-STYLE) -----*/
+/*-----"HOW OUR SERVICES WORK" SECTION (CARD-STYLE) BEGINNING-----*/
 
 .cards-style-section{
 	border-bottom: 0.5rem solid #064b24;
@@ -578,6 +578,7 @@ p{
 .cards-style-section h1{
 	padding: 3rem 1rem 1rem 1rem;
 }
+
 /*---- CONTACT US SECTION (CARD-STYLE) -----*/
 
 .contact-card{
@@ -604,6 +605,7 @@ p{
 }
 /*-----END OF CONTACT US SECTION (CARD-STYLE)-----*/
 
+
 /*----MAP BEGINNING----*/
 .map {
 	height: 40vh;
@@ -615,7 +617,6 @@ p{
 	height:100%;
 	width: 100%;
 }
-
 /*----MAP END----*/
 
 
@@ -795,9 +796,12 @@ button{
 
 /*----ABOUT-TEXT SECTION END----*/
 
-/************************
-	TREES PAGE STYLES
-************************/
+
+
+
+/*************************************
+	    INCOMPLETE PAGE STYLES
+**************************************/
 .update-container{
 	border-bottom: 0.5rem solid #064b24;
 	border-top: 0.5rem solid #064b24;
@@ -828,6 +832,8 @@ button{
 }
 
 
+
+
 /************************
 	  MEDIA QUERIES
 ************************/
@@ -844,7 +850,7 @@ button{
 
 }
 
-/*----MAIN MEDIA QUERY FOR TABLET/DESKTOP BEGINNING----*/
+/*----BEGINNING OF MAIN MEDIA QUERY FOR TABLET/DESKTOP----*/
 @media only screen and (min-width:48rem){
 	
 	/*-----DEFAULT SETTINGS------*/
@@ -923,7 +929,7 @@ button{
 	}
 
 
-	/*------HOME PAGE: QUOTES SLIDESHOW------*/
+	/*------HOME PAGE: QUOTES SLIDESHOW ------*/
 	/* Quotes slideshow - Individual slides */
 	.mySlides{
 		max-width: 60%;
@@ -1013,7 +1019,7 @@ button{
 	}
 	
 
-	/*----TREES PAGES----*/
+	/*----INOMPLETE PAGES----*/
 	.update-container p{
 		font-size: 1.5rem;
 	}
@@ -1030,6 +1036,7 @@ button{
 
 }
 /*----END OF MEDIA QUERY FOR TABLET/DESKTOP----*/
+
 
 /*----MEDIA QUERY FOR DESKTOP BEGINNING----*/
 @media only screen and (min-width: 64rem){

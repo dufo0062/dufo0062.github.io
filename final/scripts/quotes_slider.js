@@ -2,7 +2,7 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function quotes_slider_init() {
-	// Quotes Slideshow: when the arrows are clicked, the quotes will rotate
+	// When the arrows are clicked, the quotes will rotate
 	$('.arrow').on('click', function(){
 		var arrowId = this.id; 
 		if (arrowId == 'prev-arrow') {
@@ -14,7 +14,7 @@ function quotes_slider_init() {
 		plusSlides(n);
 	});
 
-	// Quotes Slideshow: when the dots beneath the slideshow are clicked, the
+	// When the dots beneath the slideshow are clicked, the
 	// associated quote will be displayed.
 	$('#dot-1').on('click', function(){
 		currentSlide(1);
@@ -31,17 +31,17 @@ function quotes_slider_init() {
 }
 
 // QUOTES SLIDESHOW FUNCTIONS
-// Quotes Slideshow: Used to make the arrows respond to being clicked. 
+// Used to make the arrows respond to being clicked. 
 function plusSlides(n) {
 	showSlides(slideIndex += n);
 }
 
-// Quotes Slideshow: Used to make the arrows respond to being clicked. 
+// Used to make the arrows respond to being clicked. 
 function currentSlide(n) {
 	showSlides(slideIndex = n);
 }
 
-// Quotes Slideshow: Used to loop through the quotes and the dots, and make
+// Used to loop through the quotes and the dots, and make
 // the appropriate dots and quotes "active", to enable display.
 function showSlides(n) {
   var i;
